@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+</head>
+<body>
+      <ul>
+        <li>Name</li>
+        <li>Roll No</li>
+        <li>College</li>
+      </ul>
+      
+      <ol id ="Ordered">
+        <li class="list">FirstName</li>
+        <li class="list">Lastname</li>
+        <li class="list">Company</li>
+      </ol>
+</body>
+       <script>
+        //Tag Selector
+        lettagNameSelector = document.getElementsByTagName("li")[2];
+        //Class Selector
+        let classSelector = document.getElementsByClassName("list")[2];
+        //query slector
+        let querySelector = document.querySelector(".list");
+        //class selector
+        classSelector.innerText = "Modified using class selector";
+       </script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+      <head>
+ 	        <title>Animations</title>
+ 	        <style type="text/css">
+ 	        	@keyframes animationClass{
+ 	        		from{
+ 	        			transform:translateX(0px);
+ 	        		}
+ 	        		to{
+ 	        			transform:translateX(50px);
+ 	        		}
+ 	        	}
+ 	        	div{
+ 	        		height:150px;
+ 	        		width:150px;
+ 	        		background:black;
+ 	        		animation-name:animationClass;
+ 	        		animation-duration:4s;
+ 	        		animation-iteration-count:  infinite;
+ 	        		animation-direction:alternate-reverse;
+ 	        		animation-direction:reverse;
+ 	        	}	
+ 	        </style>
+      </head>
+    <body style="display: flex;justify-content: center;align-items:center;height:90vh">
+       <div></div>
+    </body>
+</html>

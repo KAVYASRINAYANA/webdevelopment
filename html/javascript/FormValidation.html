@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      type="email"
+      id="email-input"
+      name="email-validator"
+      placeholder="email"
+    />
+    <p id="email-validator"></p>
+    <input type="text" name="user-validator" placeholder="user-name" />
+    <p id="user-validator"></p>
+    <button onclick="submitData()">Submit</button>
+  </body>
+
+  <script>
+    // const emailInput = document.getElementById("email-input");
+    // const pTag = document.getElementById("email-validator");
+
+    const allInputTags = document.getElementsByTagName("input");
+
+    console.log(allInputTags);
+
+    function submitData() {
+      for (let i = 0; i < allInputTags.length; i++) {
+        console.log(allInputTags[i]);
+        if (allInputTags[i].value == "") {
+          const pTag = document.getElementById(allInputTags[i].name);
+          pTag.innerText = "You Must Enter This Field";
+          pTag.style.color = "red";
+          return;
+        } else {
+          const pTag = document.getElementById(allInputTags[i].name);
+          pTag.innerText = "Verified";
+          pTag.style.color = "green";
+        }
+      }
+
+      alert("form submitted");
+    }
+
+    // function submitData() {
+    //   console.log(emailInput.name);
+    //   if (emailInput.value == "") {
+    //     pTag.innerText = "Email Must be Entered";
+    //     pTag.style.color = "red";
+    //     return;
+    //   } else {
+    //     pTag.innerText = "Great!!";
+    //     pTag.style.color = "green";
+    //   }
+    // }
+  </script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

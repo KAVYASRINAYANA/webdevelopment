@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+     <head>
+	       <title>Animations</title>
+	       <style type="text/css"> 
+	       	   @keyframes animation2{
+	       	   	 0%{
+	       	   	 	transform: scale(3);
+	       	   	 }
+	       	   	 50%{
+	       	   	 	transform: rotate(80deg);
+	       	   	 	border-radius: 50px;
+	       	   	 	background: mediumpurple;
+	       	   	 
+	       	   }
+	       	   100%{
+	       	   	    transform: scale(4);
+	       	   	    transform: rotate(360deg);
+	       	   	    background: mediumspringgreen;
+	       	   }
+	       	}
+	       	div{
+	       		height: 100px;
+	       		width: 200px;
+	           /*border-radius:50%*/
+	       		background: lightyellow;
+	       		animation-name: animation2;
+	       		animation-duration: 7s;
+	       		animation-iteration-count: infinite;
+	       		box-shadow: 0px 0px 6px grey;
+	       	}
+	       </style>
+     </head>
+   <body style="display:flex;justify-content: center;align-items: center;height: 50vh;">
+        <div></div>
+   </body>
+</html>

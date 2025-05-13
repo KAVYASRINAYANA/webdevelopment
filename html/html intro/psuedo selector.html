@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Psuedo selector</title>
+	<style type="text/css">
+		.btn1{
+			height: 50px;
+			width: 100px;
+			background: darkorchid;
+			color: lime;
+			border-radius: 20px;
+		}
+		.btn{
+			height: 50px;
+			width: 100px;
+			background: chocolate;
+			color: whitesmoke;
+			border-radius: 20px;
+		}
+		.btn1:hover{
+			  height: 30px;
+			  width: 70px;
+			  cursor: pointer;
+			  color: cyan;
+			  background: lightpink;
+		}
+		.btn:hover{
+                 height: 40px;
+                 width: 80px;
+                 background: whitesmoke;
+                 color: darksalmon;
+                 cursor: pointer;
+		}
+		.text-box:focus{
+			background: burlywood;
+			color: lightsteelblue;
+		}
+	</style>
+</head>
+<body>
+	<button class="btn">Process</button>
+	<button class="btn1">Data</button>
+    <input type="text" name="input 1" class="text-box">
+</body>
+</html>
